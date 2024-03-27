@@ -1,0 +1,303 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+/* contact section start*/
+.contact_section {
+  width: 100%;
+  float: left;
+  background-color: #355764;
+  height: auto;
+  padding-bottom: 90px;
+}
+
+.contact_main {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.request_text {
+  width: 100%;
+  float: left;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.email-bt {
+  color: #292929;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  padding: 20px;
+  background-color: #fefeff;
+  border: 0px;
+  border-radius: 30px;
+}
+
+input.email-bt::placeholder {
+  color: #292929;
+}
+
+.massage-bt {
+  color: #292929;
+  width: 100%;
+  height: 110px;
+  font-size: 18px;
+  padding: 40px 20px 10px;
+  background-color: #fefeff;
+  border: 0px;
+  border-radius: 30px;
+}
+
+textarea#comment::placeholder {
+  color: #292929;
+}
+
+.send_btn {
+  width: 170px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.send_btn a {
+  width: 100%;
+  float: left;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 0px;
+  background-color: #f7c17b;
+  border-radius: 10px;
+}
+
+.send_btn a:hover {
+  color: #000;
+  background-color: #ffffff;
+}
+/* contact section end*/
+/* footer section start*/
+
+.footer_section {
+  width: 100%;
+  float: left;
+  background-color: #355764;
+  height: auto;
+  background-size: cover;
+}
+.map_main{
+  width: 100%;
+  float: left;
+}
+.call_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #dfdfdf;
+  padding-top: 10px;
+}
+
+.email_text {
+  width: 70%;
+  float: left;
+  font-size: 16px;
+  color: #9e9c9c;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  margin-top: 40px;
+  border: 0px;
+}
+
+.subscribe_bt {
+  width: 180px;
+  float: left;
+  margin-top: 15px;
+}
+.subscribe_bt a {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #f7c17b;
+  padding: 8px;
+  margin-top: 20px;
+}
+.subscribe_bt a:hover{
+  color: #9e9c9c;
+  background-color: #ffffff;
+}
+
+
+
+
+.call_text a{
+  color: #dfdfdf;
+}
+.call_text a:hover{
+  color: #f7c17b;
+}
+.padding_left_0{
+  padding-left: 15px;
+}
+
+.social_icon {
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+}
+
+.social_icon ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.social_icon li {
+  float: left;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.copyright_section {
+  width: 100%;
+  float: left;
+  background-color: #ffffff;
+  height: auto;
+}
+
+.copyright_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  color: #151515;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.copyright_text a {
+  color: #151515;
+}
+
+.copyright_text a:hover {
+  color: #f7c17b;
+}
+
+.margin_top_90 {
+  margin-top: 90px;
+}
+
+.margin_90 {
+  margin: 90px 0px;
+}
+
+#navbarSupportedContent{
+  transform: translateX(100vw);
+}
+
+#navbarSupportedContent.nav-normal{
+  transform: none;
+}
+
+/* contact section end*/
+
